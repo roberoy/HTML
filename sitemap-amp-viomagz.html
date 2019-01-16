@@ -1,121 +1,120 @@
 <style>
 .tabbed-toc {
-	margin: 0 auto;
-	background: #36a69c;
-	background: linear-gradient(to bottom right, #36a69c, #5b86e5);
-	position: relative;
+margin: 0 auto;
+background: #5b86e5;
+background: linear-gradient(to bottom right, #5b86e5, #36d1dc);
+position: relative;
 }
 .tabbed-toc .loading {
-	display: block;
-	padding: 2px 12px;
-	color: #36a69c;
+display: block;
+padding: 2px 12px;
+color: #ffffff;
 }
 .tabbed-toc ul,
 .tabbed-toc ol,
 .tabbed-toc li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 .tabbed-toc .toc-tabs {
-	width: 20%;
-	float: left;
+width: 20%;
+float: left;
 }
 .tabbed-toc .toc-tabs li a {
-	display: block;
-	font: #36a69c; 
-	overflow: hidden;
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 12px;
+display: block;
+font: 500 12px Roboto, Arial, sans-serif;
+overflow: hidden;
+color: #ffffff;
+text-transform: uppercase;
+text-decoration: none;
+padding: 12px;
 }
 .tabbed-toc .toc-tabs li a:hover {
-	background-color: rgba(64,64,64,0.1);
+background-color: rgba(64,64,64,0.1);
 }
 .tabbed-toc .toc-tabs li a.active-tab {
-	background: rgba(64,64,64,0.1);
-	position:relative;
-	z-index:5;
-	margin:0 -1px 0 0;
-	/* cursor:text; */
+background: rgba(64,64,64,0.1);
+position:relative;
+z-index:5;
+margin:0 -1px 0 0;
+/* cursor:text; */
 }
 .tabbed-toc .toc-content,
 .tabbed-toc .toc-line {
-	width: 80%;
-	float: right;
-	background-color: white;
-	border-left: 5px solid rgba(64,64,64,0.1);
-	box-sizing: border-box;
+width: 80%;
+float: right;
+background-color: white;
+border-left: 5px solid rgba(64,64,64,0.1);
+box-sizing: border-box;
 }
 .tabbed-toc .toc-line {
-	float: none;
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
+float: none;
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
 }
 .tabbed-toc .panel {
-	position: relative;
-	z-index: 5;
+position: relative;
+z-index: 5;
 }
 .tabbed-toc .panel li a {
-	display: block;
-	position: relative;
-	font-weight: 500;
-	font-size: 14px;
-	padding: 6px 12px;
-	overflow: hidden;
+display: block;
+position: relative;
+font-weight: 500;
+font-size: 14px;
+padding: 6px 12px;
+overflow: hidden;
 }
 .tabbed-toc .panel li time {
-	display: block;
-	font-weight: normal;
-	font-size: 11px;
-	color: #666;
-	float: right;
+display: block;
+font-weight: normal;
+font-size: 11px;
+color: #666;
+float: right;
 }
 .tabbed-toc .panel li .summary {
-	display: block;
-	padding: 10px 12px 10px;
-	font-size: 13px;
+display: block;
+padding: 10px 12px 10px;
+font-size: 13px;
 }
 .tabbed-toc .panel li .summary img.thumbnail {
-	float: left;
-	display: block;
-	margin: 5px 8px 0 0;
-	width: 72px;
-	height: 72px;
-	background-color: #fafafa;
+float: left;
+display: block;
+margin: 5px 8px 0 0;
+width: 72px;
+height: 72px;
+background-color: #fafafa;
 }
 .tabbed-toc .panel li {background-color:#f3f3f3}
 .tabbed-toc .panel li:nth-child(even) {background-color:#fff}
 .tabbed-toc .panel li a:hover,
 .tabbed-toc .panel li a:focus,
 .tabbed-toc .panel li.bold a {
-	background-color: rgba(64,64,64,0.1);
-	outline: none;
+background-color: rgba(64,64,64,0.1);
+outline: none;
 }
-@media (max-width:550px) {
-	.tabbed-toc .toc-tabs,
-	.tabbed-toc .toc-content {
-		overflow :hidden;
-		width: auto;
-		float: none;
-		display: block;
-	}
-	.tabbed-toc .toc-tabs li {
-		display: inline;
-		float: left;
-	}
-	.tabbed-toc .toc-tabs li a.active-tab {
-		background-color: rgba(64,64,64,0.1);
-	}
-	.tabbed-toc .toc-content { border: none }
-	.tabbed-toc .toc-line,
-	.tabbed-toc .panel li time { display: none }
+@media (max-width:700px) {
+.tabbed-toc .toc-tabs,
+.tabbed-toc .toc-content {
+overflow :hidden;
+width: auto;
+float: none;
+display: block;
 }
-/* Skin for Blogger Tabbed Layout TOC */
+.tabbed-toc .toc-tabs li {
+display: inline;
+float: left;
+}
+.tabbed-toc .toc-tabs li a.active-tab {
+background-color: rgba(64,64,64,0.1);
+}
+.tabbed-toc .toc-content { border: none }
+.tabbed-toc .toc-line,
+.tabbed-toc .panel li time { display: none }
+}
 </style>
 <div class="tabbed-toc" id="tabbed-toc">
 <span class="loading">Memuat…</span></div>
