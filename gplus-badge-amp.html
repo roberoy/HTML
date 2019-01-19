@@ -24,12 +24,11 @@ function getQueryVariable(variable) {
 }
 var users = getQueryVariable("user");
 var layout = getQueryVariable("layout");
-var theme = getQueryVariable("theme");
 </script>
 </head>
 <body>
 <script>
-document.write('<div class="g-person" data-href="https://plus.google.com/'+ users +'" data-layout="'+ layout +'" data-theme="'+ themes +'" data-rel="author"></div>');
+document.write('<div class="g-person" data-href="https://plus.google.com/'+ users +'" data-layout="'+ layout +'" data-rel="author"></div>');
 </script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
